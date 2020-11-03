@@ -13,20 +13,20 @@
 
 <form class="col-4 offset-4" action="contactform.php" method="POST">
     <div>
-        <label for="exampleFormControlInput1">Imejl adresa</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        <label for="exampleFormControlInput1">Vaše ime</label>
+        <input type="text" name="name" class="form-control" id="exampleFormControlInput1">
     </div>
     <div>
-        <label for="exampleFormControlInput1">Vaše ime</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1">
+        <label for="exampleFormControlInput1">Imejl adresa</label>
+        <input type="mail" name="mail" class="form-control" id="exampleFormControlInput1">
     </div>
     <div>
         <label for="exampleFormControlInput1">Naslov poruke</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1">
+        <input type="text" name="subject" class="form-control" id="exampleFormControlInput1">
     </div>
     <div>
         <label for=" exampleFormControlTextarea1">Vaša poruka</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        <textarea type="text" name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
     </div><br><br>
     <div>
         <button class="btn btn-success" type="submit" name="submit">Pošaljite</button>

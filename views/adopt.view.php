@@ -2,19 +2,16 @@
 
 <?php if (is_iterable($animals)) : ?>
     <?php foreach ($animals as $animal) : ?>
-        <div class="row">
-            <div class="col s12 m7">
-                <div class="card small" height=100px width=100px>
-                    <div class="card-image">
-                        <img src="<?php echo $animal->anima_img; ?>">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title"><?php echo $animal->anima_name; ?></span>
-                        <p><?php echo $animal->anima_description; ?></p>
-
-                    </div>
-                    <div class="card-action">
-                        <a href="#">Udomi me</a>
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="<?php echo $animal->anima_img; ?>" class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title"><?php echo $animal->anima_name; ?></h5>
+                        <p class="card-text"><?php echo $animal->anima_description; ?></p>
+                        <p class="card-text"><small class="text-muted"> <a href="#">Udomi me</a></small></p>
                     </div>
                 </div>
             </div>
