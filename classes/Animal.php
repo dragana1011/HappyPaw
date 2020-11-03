@@ -9,22 +9,24 @@ class Animal
         $this->db = new Database;
     }
 
+    // private $db_con;
+
+    // public function __construct($db)
+    // {
+    //     $this->db_con = $db;
+    // }
+
     //Get all animals
-    public function getAllAnimals()
+    public function getAllCats()
+
+
     {
-        // $this->db->query("SELECT * FROM animals");
 
-
-        // $animals = $this->db->fetchAllData();
-        // var_dump($animals);
-        // return $animals;
-
-
-        // $sql = "SELECT * FROM animals";
-        // $query = $this->db->prepare($sql);
-        // $query->execute();
-        // $todos = $query->fetchAll(PDO::FETCH_OBJ);
-        // $todos = $db->query("SELECT * FROM todos")->fetchAll(PDO::FETCH_OBJ);
-        // return $todos;
+        //     $sql = "SELECT * FROM animalcategories where cat_id = 1";
+        //     $query = $this->db_con->prepare($sql);
+        //     $query->execute();
+        //     $todos = $query->fetchAll(PDO::FETCH_OBJ);
+        //     // $todos = $db->query("SELECT * FROM todos")->fetchAll(PDO::FETCH_OBJ);
+        //     return $todos;
     }
 }

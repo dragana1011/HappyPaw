@@ -11,6 +11,7 @@ require 'classes/Animal.php';
 require 'classes/QueryBuilder.php';
 require 'classes/Template.php';
 $query = new QueryBuilder($db);
+$animal = new Animal($db);
 
 // require_once 'config.php';
 

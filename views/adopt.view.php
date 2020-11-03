@@ -1,13 +1,5 @@
 <?php include 'partials/header.php'; ?>
 
-<!-- <div class="input-field col s12">
-    <select multiple>
-        <option value="" disabled selected>Odaberite</option>
-        <option value="1">Mace</option>
-        <option value="2">Kuce</option>
-    </select>
-    <label>Mace/Kuce</label>
-</div> -->
 <?php if (is_iterable($animals)) : ?>
     <?php foreach ($animals as $animal) : ?>
         <div class="row">
@@ -30,6 +22,14 @@
     <?php endforeach; ?>
 <?php endif; ?>
 
+<!-- <div class="input-field col s12">
+    <select multiple>
+        <option value="" disabled selected>Odaberite</option>
+        <option value="1">Mace</option>
+        <option value="2">Kuce</option>
+    </select>
+    <label>Mace/Kuce</label>
+</div> -->
 <!--
 <div class="input-field col s12">
     <select multiple>
