@@ -21,7 +21,7 @@
             <div class="col l4 s12">
                 <h6 class="white-text">Prečice</h6>
                 <ul>
-                    <li><a class="white-text" href="#!">
+                    <li><a class="white-text" href="adopt.php">
                             <svg class="lnr lnr-chevron-right">
                                 <use xlink:href="#lnr-chevron-right"></use>
                             </svg> Mace i kuce za udomljavanje</a>
@@ -35,7 +35,7 @@
                                 <use xlink:href="#lnr-chevron-right"></use>
                             </svg> Postanite volonter</a>
                     </li>
-                    <li><a class="white-text" href="#!">
+                    <li><a class="white-text" href="contact.php">
                             <svg class="lnr lnr-chevron-right">
                                 <use xlink:href="#lnr-chevron-right"></use>
                             </svg> Kontaktirajte nas</a>
@@ -56,6 +56,11 @@
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="js/materialize.js"></script>
 <script src="js/init.js"></script>
+<script>
+    $(document).ready(function() {
+        $('select').formSelect();
+    });
+</script>
 
 </body>
 

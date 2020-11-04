@@ -8,6 +8,7 @@ require 'classes/Database.php';
 $db = Database::connect($config['database']);
 
 require 'classes/Animal.php';
+require 'classes/Category.php';
 require 'classes/QueryBuilder.php';
 require 'classes/Template.php';
 $query = new QueryBuilder($db);

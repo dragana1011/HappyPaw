@@ -1,23 +1,44 @@
 <?php include 'partials/header.php'; ?>
-
-<?php if (is_iterable($animals)) : ?>
-    <?php foreach ($animals as $animal) : ?>
-        <div class="card mb-3" style="max-width: 540px;">
-            <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img src="<?php echo $animal->anima_img; ?>" class="card-img" alt="...">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title"><?php echo $animal->anima_name; ?></h5>
-                        <p class="card-text"><?php echo $animal->anima_description; ?></p>
-                        <p class="card-text"><small class="text-muted"> <a href="#">Udomi me</a></small></p>
-                    </div>
-                </div>
-            </div>
+<div class="row">
+    <div class="col s4">
+        <p>Pronadji po kategoriji</p>
+        <div class="input-field col s4">
+            <select>
+                <option value="0" disabled selected>odaberite</option>
+                <?php foreach ($categories as $category) : ?>
+                    <option value="<?php echo $category->cat_id; ?>"><?php echo $category->cat_name; ?></option>
+                <?php endforeach; ?>
+            </select>
+            <label>Maca ili kuca</label>
+            <br>
+            <input type="submit" class="btn">
         </div>
-    <?php endforeach; ?>
-<?php endif; ?>
+    </div>
+    <div class="col s8">
+        <div class="row">
+            <?php if (is_iterable($animals)) : ?>
+                <?php foreach ($animals as $animal) : ?>
+                    <div class="col s3 pull-s1">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="<?php echo $animal->anima_img; ?>" alt="...">
+                            </div>
+                            <div class="card-content">
+                                <h5><?php echo $animal->anima_name; ?></h5>
+                                <p><?php echo $animal->anima_description; ?></p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">Udomi me</a>
+                            </div>
+                        </div>
+                    </div>
+
+                <?php endforeach; ?>
+            <?php endif; ?>
+        </div>
+    </div>
+</div>
+<?php include 'partials/footer.php'; ?>
 
 <!-- <div class="input-field col s12">
     <select multiple>
@@ -68,5 +89,3 @@
     </select>
     <label>Starost</label>
 </div> -->
-
-<?php include 'partials/footer.php'; ?>

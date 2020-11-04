@@ -16,8 +16,8 @@ class QueryBuilder
         $sql = "SELECT * FROM {$table}";
         $query = $this->db_con->prepare($sql);
         $query->execute();
-        $todos = $query->fetchAll(PDO::FETCH_CLASS, $class);
+        $result = $query->fetchAll(PDO::FETCH_CLASS, $class);
         // $todos = $db->query("SELECT * FROM todos")->fetchAll(PDO::FETCH_OBJ);
-        return $todos;
+        return $result;
     }
 }

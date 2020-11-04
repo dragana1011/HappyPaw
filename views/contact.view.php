@@ -11,7 +11,7 @@
 </form> -->
 
 
-<form class="col-4 offset-4" action="contactform.php" method="POST">
+<form class="col s6 offset-4" action="contactform.php" method="POST">
     <div>
         <label for="exampleFormControlInput1">Vaše ime</label>
         <input type="text" name="name" class="form-control" id="exampleFormControlInput1">
